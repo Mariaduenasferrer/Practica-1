@@ -44,31 +44,31 @@ public class Time {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
 
+
     public Time nextSecond() {
-        second += 1;
+        second++;
         if (second == 60) {
             second = 0;
-            minute += 1;
+            minute++;
+            if (minute == 60) {
+                minute = 0;
+                hour = (hour + 1) % 24;
+            }
         }
-        if (minute == 60) {
-            minute = 0;
-            hour = (hour + 1) % 24; // Esto garantiza que cuando hour llegue a 24, se reinicie a 0.
-        }
-        return new Time(hour, minute, second);
+        return this;
     }
 
     public Time previousSecond() {
-        second -= 1;
-        if (second == -1) {
+        second--;
+        if (second < 0) {
             second = 59;
-            minute -= 1;
+            minute--;
+            if (minute < 0) {
+                minute = 59;
+                hour = (hour - 1 + 24) % 24;
+            }
         }
-        if (minute == -1) {
-            minute = 59;
-            hour = (hour == 0) ? 23 : hour - 1; // Si hour es 0, se asigna 23 (pasando de 00:00:00 a 23:59:59). Si hour no es 0, simplemente se le resta 1.
-        }
-        return new Time(hour, minute, second);
-
+        return this;
     }
 
 

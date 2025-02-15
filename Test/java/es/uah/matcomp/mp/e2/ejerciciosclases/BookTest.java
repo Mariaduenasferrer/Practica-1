@@ -1,12 +1,13 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
+package es.uah.matcomp.mp.e2.ejerciciosclases;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class AccountTest {
+
+class BookTest {
 
     @Test
-    void getId() {
+    void getIsbn() {
     }
 
     @Test
@@ -14,19 +15,27 @@ class AccountTest {
     }
 
     @Test
-    void getBalance() {
+    void getAuthor() {
     }
 
     @Test
-    void credit() {
+    void getPrice() {
     }
 
     @Test
-    void debit() {
+    void setPrice() {
     }
 
     @Test
-    void transferTo() {
+    void getQty() {
+    }
+
+    @Test
+    void setQty() {
+    }
+
+    @Test
+    void getAuthorName() {
     }
 
     @Test

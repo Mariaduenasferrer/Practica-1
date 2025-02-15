@@ -1,9 +1,10 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
+package es.uah.matcomp.mp.e2.ejerciciosclases.clase.customeer.y.account;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class AccountTest {
+
+class CustomerTest {
 
     @Test
     void getId() {
@@ -14,19 +15,7 @@ class AccountTest {
     }
 
     @Test
-    void getBalance() {
-    }
-
-    @Test
-    void credit() {
-    }
-
-    @Test
-    void debit() {
-    }
-
-    @Test
-    void transferTo() {
+    void getGender() {
     }
 
     @Test

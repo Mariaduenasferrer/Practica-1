@@ -62,5 +62,6 @@ public class Account {
         return "Account [id=" + this.getId() + ", name=" + this.getName() + ", balance=" + this.getBalance() + "]";
 
     }
+
 }
 

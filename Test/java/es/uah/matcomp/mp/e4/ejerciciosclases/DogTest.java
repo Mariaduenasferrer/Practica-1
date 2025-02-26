@@ -4,9 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestTypeMovablesTest {
+class DogTest {
 
     @Test
-    void main() {
+    void greets() {
+    }
+
+    @Test
+    void testGreets() {
     }
 }

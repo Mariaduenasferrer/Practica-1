@@ -1,21 +1,21 @@
 package es.uah.matcomp.mp.e3.ejerciciosclases;
 
-public class Movable extends PointM {
+public class PointMovable extends PointM {
 
         // Variables
         private float xSpeed = 0.0f;
         private float ySpeed = 0.0f;
 
         // Constructores
-        public Movable() {}
+        public PointMovable() {}
 
-        public Movable(float x, float y, float xSpeed, float ySpeed) {
+        public PointMovable(float x, float y, float xSpeed, float ySpeed) {
             super(x, y);
             this.xSpeed = xSpeed;
             this.ySpeed = ySpeed;
         }
 
-        public Movable(float xSpeed, float ySpeed) {
+        public PointMovable(float xSpeed, float ySpeed) {
             this.xSpeed = xSpeed;
             this.ySpeed = ySpeed;
         }
@@ -54,7 +54,7 @@ public class Movable extends PointM {
         }
 
         public Movable move() {
-            setXY(getX() + xSpeed, getY() + ySpeed);
+            super.setXY(super.getX() + xSpeed, super.getY() + ySpeed);
             return this;
         }
     }

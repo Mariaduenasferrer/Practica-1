@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e3.ejerciciosclases;
 
-public class TestMovable {
+public class TestPointMovable {
     public static void main(String[] args) {
         // Crear un punto
         PointMovable.Point point = new PointMovable.Point(2.5f, 3.5f);

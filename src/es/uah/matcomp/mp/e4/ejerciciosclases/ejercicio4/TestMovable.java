@@ -1,10 +1,10 @@
-package es.uah.matcomp.mp.e4.ejerciciosclases;
+package es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio4;
 
-public class TestTypeMovables {
+public class TestMovable {
     public static void main(String[] args) {
 
         //  Movimientos de Point
-        TypeMovables.MovablePoint point = new TypeMovables.MovablePoint(0, 0, 5, 5);
+        MovablePoint point = new MovablePoint(0, 0, 5, 5);
         System.out.println("MovablePoint inicial: " + point);
 
         // Movimeinto arriba
@@ -16,7 +16,7 @@ public class TestTypeMovables {
         point.moveDown();
         System.out.println("Después de moveDown desde la posición inicial: " + point);
 
-        // Movimeinto derecha
+        // Movimiento derecha
         point.resetPosition(0, 0);
         point.moveRight();
         System.out.println("Después de moveRight desde la posición inicial: " + point);
@@ -27,7 +27,7 @@ public class TestTypeMovables {
         System.out.println("Después de moveLeft desde la posición inicial: " + point);
 
         // Movimientos de Circle
-        TypeMovables.MovableCircle circle = new TypeMovables.MovableCircle(0, 0, 5, 5, 10);
+        MovableCircle circle = new MovableCircle(0, 0, 5, 5, 10);
         System.out.println("MovableCircle inicial: " + circle);
 
         // Movimiento arriba

@@ -1,10 +1,10 @@
-package es.uah.matcomp.mp.e4.ejerciciosclases;
+package es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio3;
 
 public class TestMovables {
      public static void main(String[] args) {
 
          // Crear un objeto MovablePoint
-         Movables.MovablePoint point = new Movables.MovablePoint(5, 1, 6, 3);
+         MovablePoint point = new MovablePoint(5, 1, 6, 3);
 
          // Mostrar las coordenadas iniciales
          System.out.println(point.toString());

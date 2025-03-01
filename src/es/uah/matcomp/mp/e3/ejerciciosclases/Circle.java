@@ -3,7 +3,8 @@ package es.uah.matcomp.mp.e3.ejerciciosclases;
 /**
  * The Circle class models a circle with a radius and color.
  */
-public class Circle { // Save as "Circle.java"
+public class Circle {
+    // Save as "Circle.java"
     // private instance variable, not accessible from outside this class
     private double radius;
     private String color;

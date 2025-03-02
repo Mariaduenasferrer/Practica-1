@@ -1,24 +1,21 @@
-package es.uah.matcomp.mp.e3.ejerciciosclases;
+package es.uah.matcomp.mp.e3.ejerciciosclases.ejercicio3;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class MovableTest {
+
+class MovablePointTest {
 
     @Test
     void getXSpeed() {
     }
 
     @Test
-    void getYSpeed() {
-    }
-
-    @Test
-    void getSpeed() {
-    }
-
-    @Test
     void setXSpeed() {
+    }
+
+    @Test
+    void getYSpeed() {
     }
 
     @Test
@@ -30,10 +27,14 @@ class MovableTest {
     }
 
     @Test
-    void testToString() {
+    void getSpeed() {
     }
 
     @Test
     void move() {
+    }
+
+    @Test
+    void testToString() {
     }
 }

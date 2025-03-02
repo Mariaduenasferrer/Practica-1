@@ -24,3 +24,6 @@ public class TestMovablePoint {
         System.out.println("Updated and Moved Movable: " + movable);
     }
 }
+
+
+

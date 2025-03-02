@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e3.ejerciciosclases.ejercicio4;
 
-class MovablePoint extends Point {
+class MovablePoint extends PointM {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
 

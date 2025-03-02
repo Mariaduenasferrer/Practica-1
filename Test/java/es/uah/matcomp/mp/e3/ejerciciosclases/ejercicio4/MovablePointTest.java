@@ -69,4 +69,36 @@ class MovablePointTest {
     @Test
     void testToString1() {
     }
+
+    @Test
+    void testGetXSpeed1() {
+    }
+
+    @Test
+    void testSetXSpeed1() {
+    }
+
+    @Test
+    void testGetYSpeed1() {
+    }
+
+    @Test
+    void testSetYSpeed1() {
+    }
+
+    @Test
+    void testSetSpeed1() {
+    }
+
+    @Test
+    void testGetSpeed1() {
+    }
+
+    @Test
+    void testMove1() {
+    }
+
+    @Test
+    void testToString2() {
+    }
 }

@@ -9,4 +9,8 @@ class TestMovablePointTest {
     @Test
     void main() {
     }
+
+    @Test
+    void testMain() {
+    }
 }

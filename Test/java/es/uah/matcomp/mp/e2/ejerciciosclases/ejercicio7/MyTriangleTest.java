@@ -15,4 +15,28 @@ class MyTriangleTest {
     @Test
     void getType() {
     }
+    @Test
+    void getArea() {
+    }
+    @Test
+    void getVolume() {
+    }
+    @Test
+    void getColor() {
+    }
+    @Test
+    void getSize() {
+    }
+    @Test
+    void getShape() {
+    }
+    @Test
+    void getShapeType() {
+    }
+    @Test
+    void getShapeColor() {
+    }
+    @Test
+    void getShapeSize() {
+    }
 }

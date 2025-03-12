@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio2;
 
-public class Circle implements GeometricObject {
+public class Circle implements GeometricObject1 {
     private final double radius;
 
     public Circle(double radius) {

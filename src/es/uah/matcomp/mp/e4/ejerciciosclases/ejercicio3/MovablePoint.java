@@ -1,14 +1,12 @@
 package es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio3;
 
-import es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio4.Movable;
-
 public class MovablePoint implements Movable {
 
         // Variables
-        private int x;
-        private int y;
-        private int xSpeed;
-        private int ySpeed;
+        int x;
+        int y;
+        int xSpeed;
+        int ySpeed;
 
         // Constructor
         MovablePoint(int x, int y, int xSpeed, int ySpeed) {
@@ -46,7 +44,6 @@ public class MovablePoint implements Movable {
         // Salida
         @Override
         public String toString() {
-            return "(" + x + "," + y + " Speed = " + xSpeed + "," + ySpeed + ")";
+            return "("+x+","+y+"), Speed=("+xSpeed+","+ySpeed+")";
         }
     }
-

@@ -37,5 +37,4 @@ public class MovableCircle implements Movable {
         public String toString() {
             return "(x=" + center.x + ",y=" + center.y + "),speed=(" + center.xSpeed + "," + center.ySpeed + "),radius=" + radius;
         }
-    }
-
+}

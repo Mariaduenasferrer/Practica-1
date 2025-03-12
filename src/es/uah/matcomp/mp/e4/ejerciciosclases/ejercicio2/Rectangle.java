@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e4.ejerciciosclases.ejercicio2;
 
-public class Rectangle implements GeometricObject {
+public class Rectangle implements GeometricObject1 {
     private final double width;
     private final double length;
 

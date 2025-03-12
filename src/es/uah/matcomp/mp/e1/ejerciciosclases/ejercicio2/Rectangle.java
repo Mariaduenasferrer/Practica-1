@@ -4,9 +4,8 @@ public class Rectangle {
     private float length;
     private float width;
 
-    // Constructors (overloaded)
-// /** Constructs a Circle instance with default value for radius and color */
-    public Rectangle() { // 1st (default) constructor
+
+    public Rectangle() {
         length = 1.0f;
         width = 1.0f;
     }
@@ -22,6 +21,7 @@ public class Rectangle {
     }
 
     public void setLength(float newLength) {
+
         length = newLength;
     }
 

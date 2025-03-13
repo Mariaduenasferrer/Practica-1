@@ -2,8 +2,6 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio2;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 class InvoiceTest {
     public Customer c = new Customer(1, "Pedro", 10);
     public Invoice i = new Invoice(1, c, 200);

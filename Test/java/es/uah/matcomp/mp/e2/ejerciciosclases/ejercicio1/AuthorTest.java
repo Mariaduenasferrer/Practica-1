@@ -2,8 +2,6 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio1;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 class AuthorTest {
     private Author a = new Author("pablo Rodriguez", "pablorodriguez@ejemplo.com");
 

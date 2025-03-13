@@ -2,12 +2,27 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio1;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 class BookTest {
     private Author a= new Author("karen García", "karengarcia@ejemplo.com");
     private Book b= new Book("1234", "lo tuyo", a, 15.99, 56);
 
+    @Test
+    void BookTest() {
+        assertEquals("1234", b.getIsbn());
+        assertEquals("lo tuyo", b.getName());
+        assertEquals(a, b.getAuthor());
+        assertEquals(15.99, b.getPrice());
+        assertEquals(56, b.getQty());
+
+    }
+    @Test
+    void BookTest2() {
+        assertEquals("1234", b.getIsbn());
+        assertEquals("lo tuyo", b.getName());
+        assertEquals(a, b.getAuthor());
+        assertEquals(15.99, b.getPrice());
+
+    }
 
     @Test
     void getIsbn() {

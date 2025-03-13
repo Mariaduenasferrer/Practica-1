@@ -2,16 +2,21 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio5;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class MyLineTest {
 
     @Test
     void testConstructorWithCoordinates() {
-        MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(1, line.getBeginX());
+        MyLine line = new MyLine(6, 2, 3, 4);
+        assertEquals(6, line.getBeginX());
         assertEquals(2, line.getBeginY());
         assertEquals(3, line.getEndX());
         assertEquals(4, line.getEndY());
     }
+
+
 
     @Test
     void testConstructorWithMyPointObjects() {
@@ -77,35 +82,34 @@ class MyLineTest {
         assertEquals(8, line.getEndY());
     }
 
-    // Estas pruebas estaban incorrectas, porque los valores esperados no son correctos
     @Test
     void getBegin() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(1, line.getBeginX());  // El valor correcto es 1
+        assertEquals(1, line.getBeginX());
     }
 
     @Test
     void getEnd() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(3, line.getEndX());  // El valor correcto es 3
+        assertEquals(3, line.getEndX());
     }
 
     @Test
     void getBeginX() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(1, line.getBeginX());  // El valor correcto es 1
+        assertEquals(1, line.getBeginX());
     }
 
     @Test
     void getBeginY() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(2, line.getBeginY());  // El valor correcto es 2
+        assertEquals(2, line.getBeginY());
     }
 
     @Test
     void getEndX() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(3, line.getEndX());  // El valor correcto es 3
+        assertEquals(3, line.getEndX());
     }
 
     @Test
@@ -118,7 +122,7 @@ class MyLineTest {
     @Test
     void getEndY() {
         MyLine line = new MyLine(1, 2, 3, 4);
-        assertEquals(4, line.getEndY());  // El valor correcto es 4
+        assertEquals(4, line.getEndY());
     }
 
     @Test
@@ -132,7 +136,8 @@ class MyLineTest {
     void getBeginXY() {
         MyLine line = new MyLine(1, 2, 3, 4);
         int[] expected = {1, 2};
-        assertArrayEquals(expected, line.getBeginXY());  // Verificar que el arreglo devuelto sea [1, 2]
+
+        assertArrayEquals(expected, line.getBeginXY());
     }
 
     @Test
@@ -140,14 +145,14 @@ class MyLineTest {
         MyLine line = new MyLine(1, 2, 3, 4);
         line.setBeginXY(7, 8);
         int[] expected = {7, 8};
-        assertArrayEquals(expected, line.getBeginXY());  // Verificar que el arreglo devuelto sea [7, 8]
+        assertArrayEquals(expected, line.getBeginXY());
     }
 
     @Test
     void getEndXY() {
         MyLine line = new MyLine(1, 2, 3, 4);
         int[] expected = {3, 4};
-        assertArrayEquals(expected, line.getEndXY());  // Verificar que el arreglo devuelto sea [3, 4]
+        assertArrayEquals(expected, line.getEndXY());
     }
 
     @Test
@@ -155,7 +160,7 @@ class MyLineTest {
         MyLine line = new MyLine(1, 2, 3, 4);
         line.setEndXY(7, 8);
         int[] expected = {7, 8};
-        assertArrayEquals(expected, line.getEndXY());  // Verificar que el arreglo devuelto sea [7, 8]
+        assertArrayEquals(expected, line.getEndXY());
     }
 
     @Test

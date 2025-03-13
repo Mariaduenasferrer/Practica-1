@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio2;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class CustomerTest {
     private Customer c= new Customer(1, "yuio qweer", 10);
 

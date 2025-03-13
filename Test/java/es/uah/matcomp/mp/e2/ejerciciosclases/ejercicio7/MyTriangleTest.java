@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio7;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class MyTriangleTest {
     private   MyTriangle triangle = new MyTriangle(0, 0, 3, 0, 0, 4);
 

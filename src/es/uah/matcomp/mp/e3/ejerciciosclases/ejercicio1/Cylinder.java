@@ -25,6 +25,9 @@ public class Cylinder extends Circle {
     public double getHeight() {
         return this.height;
     }
+    public void setHeight(double height) {
+        this.height = height;
+    }
 
     // Sobrescribir metodo para obtener el área superficial del cilindro
     @Override

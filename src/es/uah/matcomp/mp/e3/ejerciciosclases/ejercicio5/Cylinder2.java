@@ -9,8 +9,8 @@ public class Cylinder2 {
         height = 1.0;
     }
 
-    public Cylinder2(double r, double h) {
-        base = new Circle2(r);
+    public Cylinder2(double r, double h, String colour) {
+        base = new Circle2(r, colour);
         height = h;
     }
 
@@ -38,4 +38,5 @@ public class Cylinder2 {
     public String toString() {
         return "Cylinder[base=" + base.toString() + ", height=" + height + "]";
     }
+
 }

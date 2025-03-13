@@ -8,9 +8,9 @@ public class Circle2 {
         radius = 1.0;
         color = "red";
     }
-    public Circle2(double r) {
+    public Circle2(double r, String colour) {
         radius = r;
-        color = "red";
+        color = colour;
     }
     public double getRadius() {
         return radius;

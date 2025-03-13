@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalTest {
-
+    private Animal animal = new Animal("Toby");
     @Test
-    void testToString() {
+    void testToString() {assertEquals("Animal[name=Toby]",animal.toString());
     }
 }

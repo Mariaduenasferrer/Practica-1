@@ -9,14 +9,14 @@ class MyTriangleTest {
 
     @Test
     void testConstructorWithCoordinates() {
-        assertEquals("(0, 0)", triangle.toString().contains("(0, 0)"));
-        assertEquals("(3, 0)", triangle.toString().contains("(3, 0)"));
-        assertEquals("(0, 4)", triangle.toString().contains("(0, 4)"));
+        assertEquals(true, triangle.toString().contains("(0, 0)"));
+        assertEquals(true, triangle.toString().contains("(3, 0)"));
+        assertEquals(true, triangle.toString().contains("(0, 4)"));
     }
 
     @Test
     void testGetPerimeter() {
-        assertEquals(4, triangle.getPerimeter());
+        assertEquals(12, triangle.getPerimeter());
 
 
     }
@@ -29,16 +29,20 @@ class MyTriangleTest {
         MyTriangle triangle = new MyTriangle(v1, v2, v3);
 
 
-        assertEquals("(0, 0)", triangle.toString().contains("(0, 0)"));
-        assertEquals("(3, 0)", triangle.toString().contains("(3, 0)"));
-        assertEquals("(0, 4)", triangle.toString().contains("(0, 4)"));
+        assertEquals(true, triangle.toString().contains("(0, 0)"));
+        assertEquals(true, triangle.toString().contains("(3, 0)"));
+        assertEquals(true, triangle.toString().contains("(0, 4)"));
 
 
 
     }
     @Test
     void toStringTest() {
-        assertEquals(v1.distance(v2) + v2.distance(v3) + v3.distance(v1), triangle.toString());
+        MyPoint v1 = new MyPoint(0, 0);
+        MyPoint v2 = new MyPoint(3, 0);
+        MyPoint v3 = new MyPoint(0, 4);
+        MyTriangle triangle = new MyTriangle(v1, v2, v3);
+        assertEquals("MyTriangle (v1 = (0, 0), v2 = (3, 0), v3 = (0, 4))", triangle.toString());
     }
 }
 

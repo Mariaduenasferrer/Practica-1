@@ -7,6 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class CircleTest {
 
     @Test
+    void Circle(){
+        Circle circle = new Circle(3.0,"red");
+        assertEquals(3.0, circle.getRadius());
+        assertEquals("red", circle.getColor());
+    }
+    @Test
     void getArea() {
         Circle circle = new Circle(3.0);
         assertEquals(Math.PI * 3.0 * 3.0, circle.getArea());
@@ -30,5 +36,10 @@ class CircleTest {
     void testToString() {
         Circle circle = new Circle(2.0);
         assertEquals("Circle[radius=2.0 color=red]", circle.toString());
+    }
+    @Test
+    void getCircumference() {
+        Circle circle = new Circle(2.0);
+        assertEquals(4*Math.PI, circle.getCircumference());
     }
 }

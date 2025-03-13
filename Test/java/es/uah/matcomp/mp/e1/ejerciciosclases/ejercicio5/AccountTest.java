@@ -49,7 +49,8 @@ class AccountTest {
 
     @Test
     void transferTo() {
-        int newBalance = account1.debit(300);
+        int newBalance = account2.debit(300);
+
         assertEquals(0, newBalance);
     }
 
@@ -59,4 +60,5 @@ class AccountTest {
         assertEquals("Account [id=" + account2.getId() + ", name=" + account2.getName() + ", balance=" + account2.getBalance() + "]", account2.toString());
 
     }
+
 }

@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class CylinderTest {
 
     @Test
+    void Cylinder(){
+        Cylinder cylinder = new Cylinder(4.0);
+        assertEquals(4.0, cylinder.getHeight());
+    }
+    @Test
     void setHeight() {
         Cylinder cylinder = new Cylinder();
         cylinder.setHeight(4.0);

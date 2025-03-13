@@ -20,7 +20,10 @@ public class MyTriangle {
         return "MyTriangle (v1 = " + v1 + ", v2 = " + v2 + ", v3 = " + v3 + ")";
     }
     public double getPerimeter() {
-        return v1.distance(v2) + v2.distance(v3) + v3.distance(v1);
+        double side1 = v1.distance(v2);
+        double side2 = v2.distance(v3);
+        double side3 = v3.distance(v1);
+        return side1 + side2 + side3;
     }
     public String getType() {
         if (v1.distance(v2) == v1.distance(v3) && v2.distance(v3) == v2.distance(v1)) {

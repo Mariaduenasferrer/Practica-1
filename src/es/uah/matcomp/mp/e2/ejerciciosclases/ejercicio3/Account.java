@@ -1,8 +1,5 @@
 package es.uah.matcomp.mp.e2.ejerciciosclases.ejercicio3;
 
-
-import javax.swing.*;
-
 public class Account {
     private int id;
     private Customer customer;

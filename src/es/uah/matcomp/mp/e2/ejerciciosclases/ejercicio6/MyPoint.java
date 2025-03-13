@@ -47,7 +47,7 @@ public class MyPoint {
     public double distance(int x, int y) {
         int dx = this.x - x;
         int dy = this.y - y;
-        return Math.sqrt(dx ^2 + dy ^2);
+        return Math.sqrt(Math.pow(dx,2) + Math.pow(dy,2));
     }
 
     public double distance(MyPoint another) {

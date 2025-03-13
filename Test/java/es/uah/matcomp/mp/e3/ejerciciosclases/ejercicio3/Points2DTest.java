@@ -6,6 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Points2DTest {
     private Points2D points2D = new Points2D(3.0F, 5.0F);
+    private Points2D points2D2 = new Points2D();
+
+    @Test
+    void Point2D(){
+        assertEquals(0.0, points2D2.getX());
+        assertEquals(0.0, points2D2.getY());
+    }
     @Test
     void getX() {assertEquals(3, points2D.getX());}
 

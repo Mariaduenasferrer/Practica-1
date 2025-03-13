@@ -6,6 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Points3DTest {
     private Points3D points3D = new Points3D(3.0F, 4.0F, 5.0F);
+    private Points3D points3D2 = new Points3D();
+
+    @Test
+    void Points3D(){
+        assertArrayEquals(new float[]{0.0F, 0.0F, 0.0F}, points3D2.getXYZ());
+    }
     @Test
     void getZ() {assertEquals(5.0F, points3D.getZ());}
 

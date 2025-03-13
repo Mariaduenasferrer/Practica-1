@@ -35,6 +35,8 @@ class DateTest {
         assertEquals(10, d.getDay());
         assertEquals(8, d.getMonth());
         assertEquals(2029, d.getYear());
+        d.setDay(4);
+        assertEquals(4,d.getDay());
     }
 
     @Test

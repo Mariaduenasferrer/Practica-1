@@ -8,6 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Circle2Test {
     private Circle2 circle = new Circle2(3.0, "red");
+    private Circle2 circle2 = new Circle2();
+
+    @Test
+    void Circle(){
+        assertEquals(1.0,circle2.getRadius());
+        assertEquals("red",circle.getColor());
+    }
     @Test
     void getRadius() {assertEquals(3.0, circle.getRadius());}
 

@@ -46,10 +46,4 @@ public class InvoiceItem {
         return "InvoiceItem [id = " + this.getId()+ ", desc= " + this.getDesc()+ ", qty=" + this.getQty()+ ", unitPrice= " + this.getUnitPrice()+ " ]";
     }
 
-
-
-
 }
-
-
-

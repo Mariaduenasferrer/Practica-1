@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AccountTest {
     private Customer c = new Customer(36783, "Lucas", 'M');
     private Account a= new Account(1, c, 1000.0);
+    private Account d= new Account(1, c);
     @Test
     public void AccountTest() {
         assertEquals(1, a.getId());
@@ -15,8 +16,8 @@ class AccountTest {
     }
     @Test
     public void AccountTest2() {
-        assertEquals(1, a.getId());
-        assertEquals(c, a.getCustomer());
+        assertEquals(1, d.getId());
+        assertEquals(c, d.getCustomer());
     }
 
     @Test

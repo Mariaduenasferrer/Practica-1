@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BookTest {
     private Author a= new Author("karen García", "karengarcia@ejemplo.com");
     private Book b= new Book("1234", "lo tuyo", a, 15.99, 56);
+    private Book c= new Book("1234", "lo tuyo", a, 15.99);
 
     @Test
     void BookTest() {
@@ -19,10 +20,10 @@ class BookTest {
     }
     @Test
     void BookTest2() {
-        assertEquals("1234", b.getIsbn());
-        assertEquals("lo tuyo", b.getName());
-        assertEquals(a, b.getAuthor());
-        assertEquals(15.99, b.getPrice());
+        assertEquals("1234", c.getIsbn());
+        assertEquals("lo tuyo", c.getName());
+        assertEquals(a, c.getAuthor());
+        assertEquals(15.99, c.getPrice());
 
     }
 

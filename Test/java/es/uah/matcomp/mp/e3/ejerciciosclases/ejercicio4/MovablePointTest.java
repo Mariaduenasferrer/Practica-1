@@ -6,6 +6,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MovablePointTest {
     private MovablePoint movablePoint = new MovablePoint(2.0F, 3.0F, 1.0F, 2.0F);
+    private MovablePoint movablePoint2 = new MovablePoint();
+    private MovablePoint movablePoint3 = new MovablePoint(4,6);
+
+    @Test
+    void MovablePoint(){
+        assertEquals(0.0F, movablePoint2.getXSpeed());
+        assertEquals(0.0F, movablePoint2.getYSpeed());
+
+    }
+    @Test
+    void MovablePoint2(){
+        assertEquals(4.0F, movablePoint3.getXSpeed());
+        assertEquals(6.0F, movablePoint3.getYSpeed());
+
+    }
     @Test
     void getXSpeed() {assertEquals(1.0F, movablePoint.getXSpeed());}
 
